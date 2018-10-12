@@ -7,12 +7,12 @@ package com.gr8.object;
  */
 
 public class Time {
-    private static Time ourInstance = new Time();
 
-    public static Time getInstance() {
-        return ourInstance;
+    public Time() {
     }
 
-    private Time() {
+    @Override
+    public String toString() {
+        return "Time{}";
     }
 }
