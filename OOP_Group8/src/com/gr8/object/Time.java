@@ -6,7 +6,7 @@ package com.gr8.object;
  * @created 10/12/2018
  */
 
-public class Time {
+public class Time{
 
     public Time() {
     }

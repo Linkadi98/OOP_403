@@ -26,7 +26,11 @@ public abstract class Entity {
         this.link = link;
         this.time = time;
     }
+
+    public Entity(String identifier, String name, String description, String link) {
+    }
+
     public String source(){
-        return "Link: "+this.link+"\n"+"Time: "+this.time.printTime();
+        return "Link: "+this.link+"\n"+"Time: "+this.time.toString();
     }
 }
