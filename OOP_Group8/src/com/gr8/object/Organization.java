@@ -6,5 +6,8 @@ package com.gr8.object;
  * @created 10/12/2018
  */
 
-public class Organization {
+public class Organization extends Entity {
+    public Organization(String identifier, String name, String description, String link) {
+        super(identifier, name, description, link);
+    }
 }

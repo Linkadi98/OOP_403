@@ -6,5 +6,10 @@ package com.gr8.object;
  * @created 10/12/2018
  */
 
-public class Event {
+public class Event extends Entity {
+    public Event(String identifier, String name, String description, String link, Time time) {
+        super(identifier, name, description, link, time);
+    }
+
+
 }

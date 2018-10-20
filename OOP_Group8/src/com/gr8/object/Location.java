@@ -6,5 +6,8 @@ package com.gr8.object;
  * @created 10/12/2018
  */
 
-public class Location {
+public class Location extends Entity {
+    public Location(String identifier, String name, String description, String link) {
+        super(identifier, name, description, link);
+    }
 }
