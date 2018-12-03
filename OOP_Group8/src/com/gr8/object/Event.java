@@ -7,9 +7,18 @@ package com.gr8.object;
  */
 
 public class Event extends Entity {
-    public Event(String identifier, String name, String description, String link, Time time) {
+    private Person creater;
+    public Event(String identifier, String name, String description, String link, Time time, Person creater) {
         super(identifier, name, description, link, time);
+        this.creater = creater;
+
     }
 
+    public Person getCreater() {
+        return creater;
+    }
 
+    public void setCreater(Person creater) {
+        this.creater = creater;
+    }
 }

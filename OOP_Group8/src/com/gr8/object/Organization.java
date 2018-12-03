@@ -7,7 +7,17 @@ package com.gr8.object;
  */
 
 public class Organization extends Entity {
-    public Organization(String identifier, String name, String description, String link) {
+    private Person founder;
+    public Organization(String identifier, String name, String description, String link, Person founder) {
         super(identifier, name, description, link);
+        this.founder = founder;
+    }
+
+    public Person getFounder() {
+        return founder;
+    }
+
+    public void setFounder(Person founder) {
+        this.founder = founder;
     }
 }

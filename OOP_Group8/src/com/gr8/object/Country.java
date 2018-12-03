@@ -7,9 +7,17 @@ package com.gr8.object;
  */
 
 public class Country extends Entity {
-    String diachi;
+    private String diachi;
     public Country(String identifier, String name, String description, String link) {
         super(identifier, name, description, link);
 
+    }
+
+    public String getDiachi() {
+        return diachi;
+    }
+
+    public void setDiachi(String diachi) {
+        this.diachi = diachi;
     }
 }
