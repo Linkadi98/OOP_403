@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class CrawlData {
     public List<String> getStringObject(String sentenceString) {
-        List<String> listObject = new ArrayList<>();
+        List<String> listObject = new ArrayList<String>();
         String temp = "";
         String[] strings = sentenceString.split(" ");
         for(String string: strings) {

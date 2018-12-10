@@ -1,4 +1,4 @@
-package connect;
+package com.gr8.connect;
 
 import com.franz.agraph.repository.*;
 
@@ -107,7 +107,7 @@ public class TutorialExample {
             return null;
     }
 
-
+///sudo /home/joe/tmp/ag6.4.5/bin/agraph-control --config /home/joe/tmp/ag6.4.5/lib/agraph.cfg start
 
 
 
@@ -121,6 +121,9 @@ public class TutorialExample {
 
     public static void main(String[] args) throws Exception {
 //        example1(true);
+        String s1 = null;
+        String s2 = (String) "/hhelo";
+        char c = 87;
         example2(false);
     }
 

@@ -1,7 +1,5 @@
 package com.gr8.object;
 
-import sun.plugin.javascript.navig4.Link;
-
 /**
  * @author nickf
  * @project OOP_Group8
