@@ -68,11 +68,11 @@ public class TutorialExample {
     public static AGRepositoryConnection example2(boolean close) throws Exception {
 
         //assert some statement and count them
-//        AGRepositoryConnection connection = example1(false);
+        AGRepositoryConnection connection = example1(false);
 
-        AGServer server = new AGServer(SERVER_URL, USERNAME, PASSWORD);
-        AGCatalog catalog = server.getRootCatalog();
-        AGRepositoryConnection connection = catalog.openRepository(REPOSITORY_ID).getConnection();
+//        AGServer server = new AGServer(SERVER_URL, USERNAME, PASSWORD);
+//        AGCatalog catalog = server.getRootCatalog();
+//        AGRepositoryConnection connection = catalog.openRepository(REPOSITORY_ID).getConnection();
 
         AGValueFactory valueFactory = connection.getValueFactory();
         IRI vuong = valueFactory.createIRI("http://example.org/people/vuong");
@@ -97,8 +97,8 @@ public class TutorialExample {
 
         //remove 1 statement
 
-            connection.remove(vuong, null, null);
-            connection.remove(linh, null, null);
+//            connection.remove(vuong, null, null);
+//            connection.remove(linh, null, null);
             System.out.println("Triples count before insert: " + connection.size());
 
             connection.close();
