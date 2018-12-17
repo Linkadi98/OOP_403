@@ -21,12 +21,5 @@
         </profile>
     </profiles>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.franz</groupId>
-            <artifactId>agraph-java-client</artifactId>
-            <version>2.2.1</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
+
 </project>
