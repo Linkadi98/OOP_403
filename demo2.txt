@@ -1,0 +1,234 @@
+Q1001	labels_vi	Mahatma Gandhi
+Q1001	labels_en	Mahatma Gandhi
+Q1001	descriptions_vi	nhà lãnh đạo chính trị và tôn giáo Ấn Độ
+Q1001	descriptions_en	pre-eminent leader of Indian nationalism during British-ruled India
+Q1001	P27	Q129286
+Q1001	P19	Q14552167
+Q1001	P20	Q1381516
+Q1001	P26	Q264908
+Q1001	P157	Q312553
+Q1001	P103	Q5137
+Q1001	P69	Q4722851
+Q1001	P140	Q9089
+Q1001	P166	Q207826
+Q1001	P40	Q1390715
+Q1001	P569	+1869-10-02T00:00:00Z
+Q1001	P570	+1948-01-30T00:00:00Z
+Q1001	P106	Q82955
+Q1001	P31	Q5
+Q1001	P910	Q6512732
+Q1001	P509	Q2140674
+Q1001	P551	Q84
+Q1001	P172	Q1282294
+Q1001	P734	Q302736
+Q1001	P119	Q1210083
+Q1001	P102	Q10225
+Q1001	P1196	Q149086
+Q1001	P21	Q6581097
+Q1001	P1576	Q83364
+Q1001	P22	Q11735530
+Q1001	P511	Q12937862
+Q1001	P1343	Q20743760
+Q1001	P1412	Q1568
+Q1001	P737	Q131149
+Q1001	P463	Q1233784
+Q1001	P2959	Q21200566
+Q1001	P1066	Q16382
+Q1001	P1411	Q35637
+Q1001	P2632	Q142534
+Q1001	P25	Q48438546
+Q1001	P800	Q194279
+Q1001	P5008	Q5460604
+Q1001	P607	Q239344
+Q1001	P135	Q76611
+Q1001	P1340	Q17244894
+Q1001	P101	Q5891
+﻿P27	labels_vi	quốc tịch
+P27	labels_en	country of citizenship
+P27	descriptions_vi	quốc gia công nhận chủ thể là công dân của nước họ
+P27	descriptions_en	the object is a country that recognizes the subject as its citizen
+P19	labels_vi	nơi sinh
+P19	labels_en	place of birth
+P19	descriptions_vi	nơi sinh cụ thể nhất được biết (ví dụ: ghi tên thành phố thay vì tên quốc gia, tên bệnh viên thay vì tên thành phố vào đây)
+P19	descriptions_en	most specific known (e.g. city instead of country, or hospital instead of city) birth location of a person, animal or fictional character
+P19	alias	nơi sanh
+P19	alias	địa điểm sinh
+P19	alias	địa điểm sanh
+P19	alias	sinh ở
+P19	alias	sanh ở
+P20	labels_vi	nơi mất
+P20	labels_en	place of death
+P20	descriptions_vi	nơi chết cụ thể nhất biết được (ví dụ: ghi tên thành phố thay vì tên quốc gia, tên bệnh viên thay vì tên thành phố vào đây)
+P20	descriptions_en	most specific known (e.g. city instead of country, or hospital instead of city) death location of a person, animal or fictional character
+P20	alias	nơi chết
+P20	alias	nơi qua đời
+P20	alias	nơi từ trần
+P20	alias	địa điểm mất
+P26	labels_vi	người phối ngẫu
+P26	labels_en	spouse
+P26	descriptions_vi	bổ ngữ là vợ hay chồng của chủ ngữ
+P26	descriptions_en	the subject has the object as their spouse (husband, wife, partner, etc.). Use "unmarried partner" (P451) for non-married companions
+P26	alias	phối ngẫu
+P26	alias	vợ
+P26	alias	chồng
+P26	alias	vợ hoặc chồng
+P157	labels_vi	người giết
+P157	labels_en	killed by
+P157	descriptions_en	person who killed the subject
+P157	alias	bị giết bởi
+P103	labels_vi	ngôn ngữ mẹ đẻ
+P103	labels_en	native language
+P103	descriptions_vi	ngôn ngữ mà người đã nói từ hồi còn bé
+P103	descriptions_en	language or languages a person has learned from birth
+P103	alias	tiếng mẹ đẻ
+P103	alias	ngôn ngữ đầu tiên
+P103	alias	tiếng đầu tiên
+P69	labels_vi	trường học
+P69	labels_en	educated at
+P69	descriptions_en	educational institution attended by subject
+P140	labels_vi	tôn giáo
+P140	labels_en	religion
+P140	descriptions_en	religion of a person, organization or religious building, or associated with this subject
+P140	alias	đạo
+P166	labels_vi	giải thưởng
+P166	labels_en	award received
+P166	descriptions_en	award or recognition received by a person, organisation or creative work
+P40	labels_vi	con
+P40	labels_en	child
+P40	descriptions_en	subject has the object in their family as their offspring son or daughter (independently of their age)
+P40	alias	đứa con
+P569	labels_vi	ngày sinh
+P569	labels_en	date of birth
+P569	descriptions_en	date on which the subject was born
+P569	alias	ngày sanh
+P569	alias	ngày sinh nhật
+P570	labels_vi	ngày mất
+P570	labels_en	date of death
+P570	descriptions_en	date on which the subject died
+P570	alias	ngày chết
+P570	alias	ngày qua đời
+P570	alias	ngày từ trần
+P106	labels_vi	nghề nghiệp
+P106	labels_en	occupation
+P106	descriptions_vi	nghề nghiệp của một người; xem thêm “lĩnh vực công tác” (Property:P101), "chức vụ" (Property:P39)
+P106	descriptions_en	occupation of a person; see also "field of work" (Property:P101), "position held" (Property:P39)
+P106	alias	nghề
+P31	labels_vi	là một
+P31	labels_en	instance of
+P31	descriptions_vi	lớp mà chủ đề này là một ví dụ và thành viên cụ thể (chủ đề thường là một thành viên riêng lẻ có nhãn tên thích hợp); khác với P279; việc sử dụng thuộc tính này làm vòng loại không được dùng nữa — hãy sử dụng P2868 hoặc P3831 để thay thế
+P31	descriptions_en	that class of which this subject is a particular example and member (subject typically an individual member with a proper name label); different from P279; using this property as a qualifier is deprecated—use P2868 or P3831 instead
+P31	alias	là cái
+P31	alias	∈
+P31	alias	là một thực thể của
+P31	alias	là một trong những
+P31	alias	là ví dụ
+P31	alias	là thí dụ
+P910	labels_vi	thể loại chính của đề tài
+P910	labels_en	topic's main category
+P910	descriptions_en	main Wikimedia category
+P509	labels_vi	nguyên nhân chết
+P509	labels_en	cause of death
+P509	descriptions_en	underlying or immediate cause of death.  Underlying cause (e.g. car accident, stomach cancer) preferred.  Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide
+P551	labels_vi	nơi cư trú
+P551	labels_en	residence
+P551	descriptions_en	the place where the person is or has been, resident
+P551	alias	chỗ ở
+P551	alias	nơi ở
+P172	labels_vi	dân tộc
+P172	labels_en	ethnic group
+P172	descriptions_en	subject's ethnicity (consensus is that a VERY high standard of proof is needed for this field to be used. In general this means 1) the subject claims it him/herself, or 2) it is widely agreed on by scholars, or 3) is fictional and portrayed as such).
+P734	labels_vi	họ
+P734	labels_en	family name
+P734	descriptions_en	surname or last name of a person
+P119	labels_vi	nơi chôn
+P119	labels_en	place of burial
+P119	descriptions_en	location of grave, resting place, place of ash-scattering, etc, (e.g. town/city or cemetery) for a person or animal. There may be several places: e.g. re-burials, cenotaphs, parts of body buried separately.
+P102	labels_vi	đảng viên của đảng chính trị
+P102	labels_en	member of political party
+P102	descriptions_vi	đảng chính trị mà chính trị gia này đang hoặc đã từng là đảng viên
+P102	descriptions_en	the political party of which this politician is or has been a member
+P102	alias	đảng chính trị
+P102	alias	đảng
+P1196	labels_vi	hình thái chết
+P1196	labels_en	manner of death
+P1196	descriptions_vi	hoàn cảnh chết của một người; trong số: nguyên nhân tự nhiên, tai nạn, tự tử, bị giết, đang chờ điều tra hoặc 'giá trị không xác định'. Dùng 'nguyên nhân mất' (P509) cho nguyên nhân và sự kiện trực tiếp hoặc tiềm ẩn, ví dụ: đau tim, tai nạn xe hơi
+P1196	descriptions_en	circumstances of a person's death; one of: natural causes, accident, suicide, homicide, pending investigation or special 'unknown value'.  Use 'cause of death' (P509) for more immediate or underlying causes and events, e.g. heart attack, car accident
+P1196	alias	kiểu chết
+P1196	alias	hình thái mất
+P1196	alias	hình thức mất
+P21	labels_vi	giới tính
+P21	labels_en	sex or gender
+P21	descriptions_vi	định danh giới tính của chủ thể: nam(Q6581097), nữ(Q6581072), lưỡng giới(Q1097630), chuyển giới nữ(Q1052281), chuyển giới nam(Q2449503). Với động vật: đực/trống(Q44148), cái/mái(Q43445). Với nhóm các chủ thể cùng giới tính, dùng "phân lớp của"(P279)
+P21	descriptions_en	sexual identity of subject: male (Q6581097), female (Q6581072), intersex (Q1097630), transgender female (Q1052281), transgender male (Q2449503). Animals: male animal (Q44148), female animal (Q43445). Groups of same gender use "subclass of" (P279)
+P21	alias	định danh giới tính
+P1576	labels_vi	lối sống
+P1576	labels_en	lifestyle
+P1576	descriptions_en	typical way of life of an individual, group, or culture
+P22	labels_vi	cha
+P22	labels_en	father
+P22	descriptions_vi	bổ ngữ là cha của chủ ngữ
+P22	descriptions_en	male parent of the subject. For stepfather, use "stepparent" (P3448)
+P22	alias	bố
+P22	alias	ba
+P511	labels_en	honorific prefix
+P511	descriptions_en	word or expression used before a name, in addressing or referring to a person
+P1343	labels_vi	định nghĩa trong
+P1343	labels_en	described by source
+P1343	descriptions_en	dictionary, encyclopaedia, etc. where this item is described
+P1412	labels_vi	nói, viết hoặc ký bằng các ngôn ngữ
+P1412	labels_en	languages spoken, written or signed
+P1412	descriptions_vi	(những) ngôn ngữ mà một người sử dụng để nói hoặc viết. Có thể bao gồm cả các ngôn ngữ mẹ đẻ
+P1412	descriptions_en	language(s) that a person speaks or writes, including the native language(s)
+P1412	alias	ngôn ngữ nói
+P1412	alias	ngôn ngữ đọc
+P1412	alias	ngôn ngữ viết
+P1412	alias	ngôn ngữ ký
+P1412	alias	ngôn ngữ sử dụng
+
+P737	labels_en	influenced by
+P737	descriptions_en	this person, idea, etc. is informed by that other person, idea, etc., e.g. "Heidegger was influenced by Aristotle".
+P463	labels_vi	thành viên của
+P463	labels_en	member of
+P463	descriptions_en	organization or club to which the subject belongs. Do not use for membership in ethnic or social groups, nor for holding a position such as a member of parliament (use P39 for that).
+P2959	labels_en	permanent duplicated item
+P2959	descriptions_en	this item duplicates another item and the two can't be merged, as one Wikimedia project includes two pages, e. g. in different scripts or languages (applies to some wiki, e.g.: hywiki, cdowiki, gomwiki). Use "duplicate item" for other wikis.
+P1066	labels_en	student of
+P1066	descriptions_en	person who has taught this person
+P1411	labels_en	nominated for
+P1411	descriptions_en	award nomination received by a person, organisation or creative work (inspired from "award received" (Property:P166))
+P2632	labels_en	place of detention
+P2632	descriptions_en	place where this person is or was detained
+P25	labels_vi	mẹ
+P25	labels_en	mother
+P25	descriptions_vi	bổ ngữ là mẹ của chủ ngữ
+P25	descriptions_en	female parent of the subject. For stepmother, use "stepparent" (P3448)
+P25	alias	mẹ đẻ
+P25	alias	má
+P800	labels_vi	tác phẩm chính
+P800	labels_en	notable work
+P800	descriptions_en	notable scientific, artistic or literary work, or other work of significance among subject's works
+P5008	labels_vi	có trong danh sách chú trọng của dự án Wikimedia
+P5008	labels_en	on focus list of Wikimedia project
+P5008	descriptions_en	property to indicate that an item is part of a group of items of particular interest for maintenance, management, or development. Please note: This property does not add notability to items and items should not be created with this property if not otherwise notable for Wikidata. Don't use it when querying another property will give a comparable list.
+P607	labels_vi	cuộc xung đột
+P607	labels_en	conflict
+P607	descriptions_en	battles, wars or other military engagements in which the person or item participated
+P607	alias	chiến tranh
+P607	alias	trận đánh
+P135	labels_vi	phong trào
+P135	labels_en	movement
+P135	descriptions_en	literary, artistic, scientific or philosophical movement associated with this person or work
+P135	alias	trường phái
+P1340	labels_en	eye color
+P1340	descriptions_en	color of the irises of a person's eyes
+P101	labels_vi	lĩnh vực làm việc
+P101	labels_en	field of work
+P101	descriptions_vi	chuyên môn của một người hoặc một tổ chức, xem thêm "nghề nghiệp" (P106)
+P101	descriptions_en	specialization of a person or organization; see P106 for the occupation
+P101	alias	lĩnh vực công tác
+P101	alias	lĩnh vực nghiên cứu
+P101	alias	đối tượng nghiên cứu
+P101	alias	lĩnh vực
+P101	alias	lĩnh vực học thuật
+
+
