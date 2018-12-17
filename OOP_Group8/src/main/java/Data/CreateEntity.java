@@ -1,5 +1,7 @@
 package Data;
 
+import com.github.jsonldjava.core.RDFDataset;
+
 import java.io.*;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -21,24 +23,80 @@ public class CreateEntity {
     private static final String FOAF_NS = "http://xmlns.com/foaf/0.1/";
 
     public void createSetFirstName() throws IOException {
-        File file = new File("/home/phamngocminh/OOP_403/OOP_Group8/src/main/java/Data/test.txt");
+        Comparator<Node> comparator = new NodeComparator();
+        PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
+        File file = new File("/home/phamngocminh/OOP_403/OOP_Group8/src/main/java/Data/demo2.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         String st;
         while ((st = br.readLine()) != null) {
             String[] test = st.split("\t");
-            for (String s : test) {
-                System.out.println(s);
+            Node node = new Node();
+            node.ID = test[0];
+            node.priority = node.cutNumberFrom(node.ID);
+            String temp = test[1];
+            if(temp.equals("labels_vi")) {
+                node.type = temp;
+                node.label_vi = test[2];
             }
+            else if(temp.equals("labels_en")) {
+                node.type = temp;
+                node.label_en = test[2];
+            }
+            else if(temp.equals("descriptions_vi")) {
+                node.type = temp;
+                node.description_vi = test[2];
+            }
+            else if(temp.equals("descriptions_en")) {
+                node.type = temp;
+                node.description_en = test[2];
+            }
+            else if(test[1].equals("alias")) {
+                node.type = temp;
+                node.alias = test[2];
+            }
+            else {
+                node.relation = test[1];
+                node.ID2 = test[2];
+            }
+
+            pQ.add(node);
+
+        }
+//        for (Node node: pQ) {
+//            System.out.println(node.priority);
+//        }
+
+//        System.out.println(pQ.poll().priority);
+
+
+        for (int i = 0; i < pQ.size(); i++) {
+            Node newNode = pQ.poll();
+            System.out.println(newNode.relation + " " + newNode.ID2);
         }
     }
 
+    public void createURI(PriorityQueue<Node> pQ) {
+        // duyet hang doi
+        while (!pQ.isEmpty()) {
+            // lay ra node dau tien
+            Node node = pQ.poll();
+            // kiem tra type nao thi tao link do
+            if (node.type.equals("labels_vi")) {
+                // tao IRI tai day
+            }
+            else if() {
+                // cac truong hop khac
+            }
+        }
+    } 
+
     public static void main (String [] args) throws Exception {
-//        CreateEntity cr = new CreateEntity();
-//        cr.createSetFirstName();
-        Comparator<Node> comparator = new NodeComparator();
-        PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
+        CreateEntity cr = new CreateEntity();
+        cr.createSetFirstName();
+
+
     }
 
 

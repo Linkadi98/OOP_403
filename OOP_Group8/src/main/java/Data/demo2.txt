@@ -43,7 +43,7 @@ Q1001	P607	Q239344
 Q1001	P135	Q76611
 Q1001	P1340	Q17244894
 Q1001	P101	Q5891
-﻿P27	labels_vi	quốc tịch
+P27	labels_vi	quốc tịch
 P27	labels_en	country of citizenship
 P27	descriptions_vi	quốc gia công nhận chủ thể là công dân của nước họ
 P27	descriptions_en	the object is a country that recognizes the subject as its citizen
@@ -184,7 +184,6 @@ P1412	alias	ngôn ngữ đọc
 P1412	alias	ngôn ngữ viết
 P1412	alias	ngôn ngữ ký
 P1412	alias	ngôn ngữ sử dụng
-
 P737	labels_en	influenced by
 P737	descriptions_en	this person, idea, etc. is informed by that other person, idea, etc., e.g. "Heidegger was influenced by Aristotle".
 P463	labels_vi	thành viên của
@@ -230,5 +229,3 @@ P101	alias	lĩnh vực nghiên cứu
 P101	alias	đối tượng nghiên cứu
 P101	alias	lĩnh vực
 P101	alias	lĩnh vực học thuật
-
-

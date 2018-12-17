@@ -1,6 +1,7 @@
 package Data;
 
 public class Node {
+
     String ID = "";
     public int priority;
     String label_vi = "";
@@ -8,10 +9,15 @@ public class Node {
     String description_vi = "";
     String description_en = "";
     String alias = "";
+    // day la bien type phuc vu cho viec tao URI
+    // voi bien nay co the xem node nay thuoc loai nao vi du
+    // P01 labels_vi abc thi bien type la labels_vi ->> URI /example/.../labels_vi/abc
 
-    public Node(String ID) {
-        priority = cutNumberFrom(ID);
-    }
+    String type = "";
+
+    String relation = "";
+    String ID2 = "";
+
 
     public Node() {
 
