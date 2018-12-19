@@ -3,6 +3,7 @@ package Data;
 import com.github.jsonldjava.core.RDFDataset;
 
 import java.io.*;
+import java.net.URL;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.PriorityQueue;
@@ -24,9 +25,10 @@ public class CreateEntity {
 
     public void createSetFirstName() throws IOException {
         Comparator<Node> comparator = new NodeComparator();
-        PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
-        File file = new File("/home/phamngocminh/OOP_403/OOP_Group8/src/main/java/Data/demo2.txt");
-
+        PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);///home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/main/java
+        File file = new File("/Data/demo2.txt");
+        URL url = getClass().getResource("demo2.txt");
+//        File file1 = new File(url.getPath());
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         String st;
@@ -64,12 +66,6 @@ public class CreateEntity {
             pQ.add(node);
 
         }
-//        for (Node node: pQ) {
-//            System.out.println(node.priority);
-//        }
-
-//        System.out.println(pQ.poll().priority);
-
 
         for (int i = 0; i < pQ.size(); i++) {
             Node newNode = pQ.poll();
@@ -86,7 +82,7 @@ public class CreateEntity {
             if (node.type.equals("labels_vi")) {
                 // tao IRI tai day
             }
-            else if() {
+            else if(false) {
                 // cac truong hop khac
             }
         }
