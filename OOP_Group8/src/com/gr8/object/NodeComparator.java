@@ -1,5 +1,5 @@
-package com.gr8.object;
-import com.gr8.object.Node;
+package object;
+
 
 import java.util.Comparator;
 

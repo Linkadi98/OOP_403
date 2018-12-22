@@ -1,6 +1,7 @@
-package com.gr8.object;
+package object;
 
-import com.gr8.connect.ConnectionAgraph;
+
+import connect.ConnectionAgraph;
 
 public class Query {
     private String query;

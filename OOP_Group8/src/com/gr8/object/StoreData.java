@@ -1,7 +1,7 @@
-package com.gr8.object;
+package object;
 
 import com.franz.agraph.repository.*;
-import com.gr8.connect.ConnectionAgraph;
+import connect.ConnectionAgraph;
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
 
@@ -15,10 +15,10 @@ import java.util.PriorityQueue;
 public class StoreData {
     private static final String LINK = "http://gr8.org/OOP/Project/";
     private ConnectionAgraph connectionAgraph = new ConnectionAgraph();
-    public PriorityQueue<Node> createQueue() throws IOException {
+    public PriorityQueue<Node> createQueue(String pathData) throws IOException {
         Comparator<Node> comparator = new NodeComparator();
         PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
-        File file = new File("/home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/main/java/Data/data3.txt");
+        File file = new File(pathData);
         BufferedReader br = new BufferedReader(new FileReader(file));
 
         String st;
@@ -59,7 +59,6 @@ public class StoreData {
 
         return pQ;
     }
-
     public void store(PriorityQueue<Node> pQ) {
         AGRepositoryConnection connection = this.connectionAgraph.getConnection(true);
         AGValueFactory valueFactory = connection.getValueFactory();
@@ -89,21 +88,5 @@ public class StoreData {
                 }
             }
         }
-
-
-
-    } 
-
-    public static void main (String [] args) throws Exception {
-        StoreData storeData = new StoreData();
-        PriorityQueue<Node> priorityQueue = storeData.createQueue();
-        storeData.store(priorityQueue);
     }
-
-
-
-
-
-
-
 }

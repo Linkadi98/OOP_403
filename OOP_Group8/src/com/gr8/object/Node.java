@@ -1,4 +1,4 @@
-package com.gr8.object;
+package object;
 
 public class Node {
 

@@ -1,6 +1,6 @@
-package com.gr8.connect;
+package connect;
 
-import com.franz.agraph.http.AGHttpRepoClient;
+
 import com.franz.agraph.repository.*;
 
 public class ConnectionAgraph {
