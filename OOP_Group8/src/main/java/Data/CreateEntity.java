@@ -90,7 +90,7 @@ public class CreateEntity {
                 // cac truong hop khac
             }
         }
-    } 
+    }
 
     public static void main (String [] args) throws Exception {
         CreateEntity cr = new CreateEntity();
