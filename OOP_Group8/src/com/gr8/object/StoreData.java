@@ -14,8 +14,9 @@ import java.util.PriorityQueue;
 
 public class StoreData {
     private static final String LINK = "http://gr8.org/OOP/Project/";
-    private ConnectionAgraph connectionAgraph = new ConnectionAgraph();
+
     private String resID;
+    private ConnectionAgraph connectionAgraph = new ConnectionAgraph(resID);
     private Comparator<Node> comparator = new NodeComparator();
     private PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
     private String pathData;
@@ -71,7 +72,7 @@ public class StoreData {
     }
     public void store() throws IOException {
         this.pQ = createQueue(this.pathData);
-        System.out.println(pQ);
+//        System.out.println(pQ);
         connectionAgraph.setRepositoryId(resID);
         AGRepositoryConnection connection = connectionAgraph.getConnection(true);
         AGValueFactory valueFactory = connection.getValueFactory();

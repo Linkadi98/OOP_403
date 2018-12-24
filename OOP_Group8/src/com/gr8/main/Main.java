@@ -18,7 +18,7 @@ public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        StoreData storeData = new StoreData("repository0","/home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/com/gr8/data/data3.txt");
+        StoreData storeData = new StoreData("repository0","/home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/com/gr8/data/file_0.txt");
         storeData.store();
     }
 }
