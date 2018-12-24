@@ -15,9 +15,19 @@ import java.util.PriorityQueue;
 public class StoreData {
     private static final String LINK = "http://gr8.org/OOP/Project/";
     private ConnectionAgraph connectionAgraph = new ConnectionAgraph();
+    private String resID;
+    private Comparator<Node> comparator = new NodeComparator();
+    private PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
+    private String pathData;
+
+    public StoreData(String resID, String pathData) {
+        this.resID = resID;
+        this.pathData = pathData;
+    }
+
     public PriorityQueue<Node> createQueue(String pathData) throws IOException {
         Comparator<Node> comparator = new NodeComparator();
-        PriorityQueue<Node> pQ = new PriorityQueue<Node>(500, comparator);
+        PriorityQueue<Node> priorityQueue = new PriorityQueue<Node>(500, comparator);
         File file = new File(pathData);
         BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -53,14 +63,17 @@ public class StoreData {
                 node.setID2(test[2]);
             }
 
-            pQ.add(node);
+            priorityQueue.add(node);
 
         }
 
-        return pQ;
+        return priorityQueue;
     }
-    public void store(PriorityQueue<Node> pQ) {
-        AGRepositoryConnection connection = this.connectionAgraph.getConnection(true);
+    public void store() throws IOException {
+        this.pQ = createQueue(this.pathData);
+        System.out.println(pQ);
+        connectionAgraph.setRepositoryId(resID);
+        AGRepositoryConnection connection = connectionAgraph.getConnection(true);
         AGValueFactory valueFactory = connection.getValueFactory();
 
 
@@ -77,6 +90,7 @@ public class StoreData {
                 Literal literalValue = valueFactory.createLiteral(node.getValueOfType());
                 connection.add(object,typeIRI,literalValue);
             }else {
+                // luu du lieu dang Q P *
                 IRI subjectIRI = valueFactory.createIRI(LINK+"object/"+node.getID());
                 IRI predicateIRI = valueFactory.createIRI(LINK+"object/"+node.getRelation());
                 if (node.checkID2IsObject(node.getID2())){
