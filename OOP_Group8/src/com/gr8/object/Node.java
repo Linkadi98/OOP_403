@@ -112,6 +112,7 @@ public class Node {
         return ontology+this.type;
     }
     public String getValueOfType() {
+        // phuong thuc nay de lay ra gia tri cua 1 trong 5 thuoc tinh
         String result;
         String type_1 = type;
         if(label_en!=""){
@@ -128,6 +129,7 @@ public class Node {
         return result;
     }
     public boolean checkID2IsObject(String ID2){
+        // kiem tra ID2 co phai la dang Qxxx ko
         boolean result;
         if (!ID2.substring(0,1).equals("Q")){
             result = false;
