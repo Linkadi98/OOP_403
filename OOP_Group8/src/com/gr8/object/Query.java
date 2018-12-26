@@ -14,24 +14,19 @@ import javax.security.auth.Subject;
 
 
 public class Query {
-    private String query;
-//    private ConnectionAgraph connectionAgraph = new ConnectionAgraph();
+    private ConnectionAgraph connectionAgraph;
     private long checkTime;
-//    public Query(String query) {
-//        this.query = query;
-//    }
     private String resID;
-
     public String getResID() {
         return resID;
     }
-
     public void setResID(String resID) {
         this.resID = resID;
     }
 
-    public void printResultQuery(String queryString){
-        ConnectionAgraph connectionAgraph = new ConnectionAgraph(resID);
+    public long printResultQuery(String queryString){
+        // phuong thuc nay de in ket qua truy van, tra ve thoi gian truy v
+        connectionAgraph = new ConnectionAgraph(resID);
         AGRepositoryConnection connection = connectionAgraph.getConnection(true);
         long timeStart = System.currentTimeMillis();
         AGTupleQuery tupleQuery = connection.prepareTupleQuery(QueryLanguage.SPARQL, queryString);
@@ -54,7 +49,7 @@ public class Query {
                     o = bindingSet.getValue("o");
                 }
 
-                System.out.println(s+" "+p+" "+ o);
+//                System.out.println(s+" "+p+" "+ o);
 //                System.out.println(s.toString());
             }
         } finally {
@@ -63,8 +58,7 @@ public class Query {
 
         System.out.println("time: "+ checkTime);
         connection.close();
+        return checkTime;
     }
-
-
 }
 

@@ -14,7 +14,6 @@ public class Node {
     // P01 labels_vi abc thi bien type la labels_vi ->> URI /example/.../labels_vi/abc
 
     private String type = "";
-
     private String relation = "";
     private String ID2 = "";
 

@@ -25,6 +25,7 @@ public class ConnectionAgraph {
 
 
     public AGRepositoryConnection getConnection(boolean create){
+        // phuong thuc nay tra ve 1 connection neu create = true
         AGServer server = new AGServer(SERVER_URL,USERNAME,PASSWORD);
         AGCatalog catalog = server.getCatalog(CATALOG_ID);
         AGRepository repository = catalog.createRepository(getRepositoryId());

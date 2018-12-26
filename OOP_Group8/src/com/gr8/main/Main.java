@@ -4,6 +4,7 @@ import object.Query;
 import object.StoreData;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Main {
     private static final String REPOSITORY_0 = "repository0";
@@ -11,18 +12,20 @@ public class Main {
     private static final String REPOSITORY_2 = "repository2";
     private static final String REPOSITORY_3 = "repository3";
     private static final String REPOSITORY_4 = "repository4";
-    private static final String DATAFILE_0 = "data/file_0.txt";
-    private static final String DATAFILE_1 = "data/file_1.txt";
-    private static final String DATAFILE_2 = "data/file_2.txt";
-    private static final String DATAFILE_3 = "data/file_3.txt";
-    private static final String DATAFILE_4 = "data/file_4.txt";
+    private static final String DATAFILE_0 = "file_0.txt";
+    private static final String DATAFILE_1 = "file_1.txt";
+    private static final String DATAFILE_2 = "file_2.txt";
+    private static final String DATAFILE_3 = "file_3.txt";
+    private static final String DATAFILE_4 = "file_4.txt";
 
-    private void storeTriple() throws IOException {
-        StoreData storeData = new StoreData(REPOSITORY_4,"/home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/com/gr8/data/"+DATAFILE_4);
+    protected void storeTriple() throws IOException {
+        StoreData storeData = new StoreData(REPOSITORY_1,"/home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/com/gr8/data/"+DATAFILE_1);
         storeData.store();
     }
-    public static void main(String[] args) {
-        Query query = new Query();
+    public static void main(String[] args) throws IOException {
+        StoreData storeData = new StoreData(REPOSITORY_3,"/home/nickf2k/OOP/OOP/OOP_403/OOP_Group8/src/com/gr8/data/"+DATAFILE_3);
+        storeData.store();
+//        Query query = new Query();
 //        String resID0 = "";
 //        String resID1 = "";
 //        String resID2 = "";
@@ -55,36 +58,47 @@ public class Main {
         //truy van don gian
         // ae bo comment doan duoi nay de truy van don gian nhe
 
-//        for (int i = 0; i<5; i++){
+//        for (int i = 3; i<5; i++){
 //            String resID = "repository"+i;
+//            ArrayList<Long> listTime = new ArrayList<>();
+//
 //            query.setResID(resID);
-//            query.printResultQuery(simpleQueryString0);
-//            query.printResultQuery(simpleQueryString1);
-//            query.printResultQuery(simpleQueryString2);
-//            query.printResultQuery(simpleQueryString3);
-//            query.printResultQuery(simpleQueryString4);
-//            query.printResultQuery(simpleQueryString5);
-//            query.printResultQuery(simpleQueryString6);
-//            query.printResultQuery(simpleQueryString7);
-//            query.printResultQuery(simpleQueryString8);
-//            query.printResultQuery(simpleQueryString9);
+//            listTime.add(query.printResultQuery(simpleQueryString0));
+//            listTime.add(query.printResultQuery(simpleQueryString1));
+//            listTime.add(query.printResultQuery(simpleQueryString2));
+//            listTime.add(query.printResultQuery(simpleQueryString3));
+//            listTime.add(query.printResultQuery(simpleQueryString4));
+//            listTime.add(query.printResultQuery(simpleQueryString5));
+//            listTime.add(query.printResultQuery(simpleQueryString6));
+//            listTime.add(query.printResultQuery(simpleQueryString7));
+//            listTime.add(query.printResultQuery(simpleQueryString8));
+//            listTime.add(query.printResultQuery(simpleQueryString9));
+//            for (long time: listTime){
+//                System.out.println(time);
+//            }
+//
+//
 //        }
 
         //truy van phuc tap
-        for (int i =0; i<5;i++){
-            String resID = "repository"+i;
-            query.setResID(resID);
-            query.printResultQuery(complexQueryString0);
-            query.printResultQuery(complexQueryString1);
-            query.printResultQuery(complexQueryString2);
-            query.printResultQuery(complexQueryString3);
-            query.printResultQuery(complexQueryString4);
-            query.printResultQuery(complexQueryString5);
-            query.printResultQuery(complexQueryString6);
-            query.printResultQuery(complexQueryString7);
-            query.printResultQuery(complexQueryString8);
-            query.printResultQuery(complexQueryString9);
-        }
-        //ae chu y neu gap loi no-space hoac chi chay dc 1,2 repository thi khoi dong lai server, dat lai vong for de truy van den nhung repository nao chua duoc truy van
+//        for (int i =3; i<5;i++){
+//            String resID = "repository"+i;
+//            query.setResID(resID);
+//            ArrayList<Long> listTime = new ArrayList<>();
+//            listTime.add(query.printResultQuery(complexQueryString0));
+//            listTime.add(query.printResultQuery(complexQueryString1));
+//            listTime.add(query.printResultQuery(complexQueryString2));
+//            listTime.add(query.printResultQuery(complexQueryString3));
+//            listTime.add(query.printResultQuery(complexQueryString4));
+//            listTime.add(query.printResultQuery(complexQueryString5));
+//            listTime.add(query.printResultQuery(complexQueryString6));
+//            listTime.add(query.printResultQuery(complexQueryString7));
+//            listTime.add(query.printResultQuery(complexQueryString8));
+//            listTime.add(query.printResultQuery(complexQueryString9));
+//            for (long time: listTime){
+//                System.out.println(time);
+//            }
+//        }
+//        //ae chu y neu gap loi no-space hoac chi chay dc 3 repository thi khoi dong lai server, dat lai vong for de truy van den nhung repository nao chua duoc truy van
     }
 }

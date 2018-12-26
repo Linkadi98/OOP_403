@@ -72,13 +72,9 @@ public class StoreData {
     }
     public void store() throws IOException {
         this.pQ = createQueue(this.pathData);
-//        System.out.println(pQ);
         connectionAgraph.setRepositoryId(resID);
         AGRepositoryConnection connection = connectionAgraph.getConnection(true);
         AGValueFactory valueFactory = connection.getValueFactory();
-
-
-
         while (!pQ.isEmpty()) {
             // lay ra node dau tien
             Node node = pQ.poll();
@@ -95,9 +91,11 @@ public class StoreData {
                 IRI subjectIRI = valueFactory.createIRI(LINK+"object/"+node.getID());
                 IRI predicateIRI = valueFactory.createIRI(LINK+"object/"+node.getRelation());
                 if (node.checkID2IsObject(node.getID2())){
+                    //ID2 la obejct, day la dang Q P Q
                     IRI objectIRI = valueFactory.createIRI(LINK+"object/"+node.getID2());
                     connection.add(subjectIRI,predicateIRI,objectIRI);
                 }else {
+                    // ID2 ko phai obejct, day la dang Q P L
                     Literal literalValue = valueFactory.createLiteral(node.getID2());
                     connection.add(subjectIRI,predicateIRI,literalValue);
                 }
